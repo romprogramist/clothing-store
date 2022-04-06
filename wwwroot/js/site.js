@@ -36,6 +36,7 @@ document.querySelector('.shadow').addEventListener('click', () => {
 })
 
 //Модальное окно
+
 document.querySelectorAll('.registration').forEach(el => {
     el.addEventListener('click', () => {
       modal.classList.add('show');
