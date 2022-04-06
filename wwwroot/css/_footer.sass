@@ -1,0 +1,61 @@
+footer
+    background: #f0f0f0
+    padding: 0 40px
+    & > .wrapper
+        margin: 0 auto
+        max-width: 885px
+        padding: 50px 0
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+        & > .item
+            width: 169px
+            position: relative
+            &:before
+                position: absolute
+                content: ''
+                width: 1px
+                height: 101px
+                background: rgb(147, 147, 147)
+                left: -25px
+            h3
+                width: 146px
+                color: rgb(147, 147, 147)
+                font-size: 17px
+            .logo
+                font-size: 25px
+                letter-spacing: 3px
+            .imges
+                display: flex
+                justify-content: space-between
+                width: 150px
+            & > div
+                margin-top: 20px 
+                a
+                   img
+                       width: 30px 
+                & > p
+                    font-size: 14px 
+                    color: rgb(147, 147, 147)
+                    margin-top: 4px
+                    line-height: 1.5px
+                    line-height: 30.5px
+                .address
+                    width: 142px
+        & > .item:first-child
+            &:before
+                display: none
+
+@media  (max-width: 757px)
+    footer
+        & > .wrapper
+            display: block
+            & > .item
+                width: 100%
+                margin-top: 40px 
+                &:before
+                    display: none
+                & > .imges
+                    min-width: 190px
+            & > .item:first-child
+                margin-top: 0

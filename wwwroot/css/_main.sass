@@ -1,0 +1,57 @@
+.main
+    .wrapper
+        display: flex
+        flex-wrap: wrap
+        .item
+            display: inline-block
+            overflow: hidden
+            max-width: 25% 
+            img
+                display: block
+                transition: 1s
+                width: 100%
+                height: 100%
+                object-fit: cover
+                &:hover
+                    transform: scale(1.1)
+.popular
+    h2
+        text-align: center
+        font-weight: 400
+        font-size: 18px
+        line-height: 22px
+    .wrapper
+        flex-wrap: wrap
+        display: flex
+        margin-top: 30px
+        .item
+            max-width: 20%
+            display: inline-block
+            overflow: hidden
+            img
+                display: block
+                transition: 1s
+                width: 100%
+                object-fit: cover
+                &:hover
+                    transform: scale(1.1)
+
+@media  (max-width: 757px)
+    .main
+        .wrapper
+            .item
+                min-width: 50%
+
+    .popular
+        .wrapper
+            .item
+                max-width: 33.33%
+@media  (max-width: 530px)
+    .main
+        .wrapper
+            .item
+                min-width: 100%
+    .popular
+        .wrapper
+            .item
+                max-width: 50%                

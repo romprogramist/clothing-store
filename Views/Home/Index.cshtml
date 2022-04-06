@@ -1,0 +1,108 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+
+<section class="main">
+    <div class="wrapper">
+        <div class="item">
+            <img src="img/bg/boy-main.webp" alt="">
+        </div>
+        <div class="item">
+            <img src="img/bg/girl-main.webp" alt="">
+        </div>
+        <div class="item">
+            <img src="img/bg/boy-main.webp" alt="">
+        </div>
+        <div class="item">
+            <img src="img/bg/girl-main.webp" alt="">
+        </div>
+        <div class="item">
+            <img src="img/bg/boy-main.webp" alt="">
+        </div>
+        <div class="item">
+            <img src="img/bg/girl-main.webp" alt="">
+        </div>
+        <div class="item">
+            <img src="img/bg/boy-main.webp" alt="">
+        </div>
+        <div class="item">
+            <img src="img/bg/girl-main.webp" alt="">
+        </div>
+    </div>
+</section>
+<section class="new-arrivals">
+    <h2>
+        НОВЫЕ ПОСТУПЛЕНИЯ
+    </h2>
+    <div class="wrapper">
+        @{
+            Html.RenderPartial("_CardTemplate", new CardModel
+            {
+                name = "УЗНАЙТЕ О НАС БОЛЬШЕ!",
+                price = "9,990,00",
+                img = "img/bg/boy-main.webp",
+                altAtr = "Узнайте о нас больше!",
+                titleAtr = "Узнайте о нас больше!",
+            });
+        }
+        @{
+            Html.RenderPartial("_CardTemplate", new CardModel
+            {
+                name = "УЗНАЙТЕ О НАС БОЛЬШЕ!",
+                price = "9,990,00",
+                img = "img/bg/boy-main.webp",
+                altAtr = "Узнайте о нас больше!",
+                titleAtr = "Узнайте о нас больше!",
+            });
+        }
+        @{
+            Html.RenderPartial("_CardTemplate", new CardModel
+            {
+                name = "УЗНАЙТЕ О НАС БОЛЬШЕ!",
+                price = "9,990,00",
+                img = "img/bg/boy-main.webp",
+                altAtr = "Узнайте о нас больше!",
+                titleAtr = "Узнайте о нас больше!",
+            });
+        }
+    </div>
+</section>
+<section class="popular">
+    <h2>
+        ПОПУЛЯРНЫЕ ТОВАРЫ
+    </h2>
+    <div class="wrapper">
+        <div class="item">
+            <img src="img/bg/boy-main.webp" alt="">
+        </div>
+        <div class="item">
+            <img src="img/bg/boy-main.webp" alt="">
+        </div>
+        <div class="item">
+            <img src="img/bg/boy-main.webp" alt="">
+        </div>
+        <div class="item">
+            <img src="img/bg/boy-main.webp" alt="">
+        </div>
+        <div class="item">
+            <img src="img/bg/boy-main.webp" alt="">
+        </div>
+        <div class="item">
+            <img src="img/bg/boy-main.webp" alt="">
+        </div>
+        <div class="item">
+            <img src="img/bg/boy-main.webp" alt="">
+        </div>
+        <div class="item">
+            <img src="img/bg/boy-main.webp" alt="">
+        </div>
+        <div class="item">
+            <img src="img/bg/boy-main.webp" alt="">
+        </div>
+        <div class="item">
+            <img src="img/bg/boy-main.webp" alt="">
+        </div>
+    </div>
+</section>

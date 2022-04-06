@@ -1,0 +1,26 @@
+@model CardModel
+
+@{
+    Layout = null;
+}
+
+@* <p>@Model.MyProperty</p> *@
+
+<div class="card">
+    <div class="classImg">
+        <img src="@Model.img" alt="@Model.altAtr" title="@Model.titleAtr">
+    </div>
+    <div class="name-price">
+        <p class="name">
+            @Model.name
+        </p>
+        <p class="price">
+            @Model.price
+        </p>
+        <div class="will-appear-smoothly">
+            <p>
+                Подробности > 
+            </p>
+        </div>
+    </div>
+</div>

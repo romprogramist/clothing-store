@@ -1,0 +1,304 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - jenka_pure</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/jenka_pure.styles.css" asp-append-version="true" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>    
+    <header>
+        <div class="wrapper">
+            <div class="label">
+                <p>ВЕСТА</p>
+            </div>
+            <div class="menu">
+                <nav>
+                    <ul class="main-ul">
+                        <li>
+                            <a href="">ГЛАВНАЯ</a>
+                        </li>
+                        <li class="have-navigation">
+                            <p>КАТАЛОГ</p>
+                            <ul class="drop-down">
+                                <li>
+                                    <a href="">
+                                        ЖЕНСКИЙ ОТДЕЛ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        МУЖСКОЙ ОТДЕЛ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        АКСЕССУАРЫ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        РАСПРОДАЖА
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">О НАС</a>
+                        </li>
+                        <li>
+                            <a href="">КОНТАКТЫ</a>
+                        </li>
+                        <li>
+                            <a href="">FAQ</a>
+                        </li>
+                        <li class="icon">                            
+                            <div>
+                                <img class="registration" src="img/icons/registration.png" alt="" title="">
+                            </div>
+                        </li>
+                        <li class="icon">
+                            <div>
+                                <img class="basket open-closed-basket" src="img/icons/basket.png" alt="" title="">
+                            </div>                     
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>                
+    </header>    
+    <main role="main">
+        <section class="subheader">
+            <div>
+                <img class="registration" src="img/icons/registration.png" alt="" title="">
+                <img class="basket open-closed-basket" src="img/icons/basket.png" alt="" title="">
+            </div>
+        </section>
+        @RenderBody()        
+    </main>
+    <div class="modal-window">
+        <div class="close">
+            <div class="box">
+            </div>
+        </div>
+        <h3>Авторизация</h3>
+        <p>Введите номер телефона</p>
+        <form>
+            <label>
+                <input placeholder="+7 ( _ _ _ ) _ _ _ - _ _ - _ _" type="tel" id="phone" name="phone">
+            </label>
+            <button>
+                Продолжить
+            </button>
+            <a href="#">
+                Регистрация на сайте
+            </a>
+        </form>
+    </div>
+    <div class="basket-window none">
+        <div class="header">
+            <div class="open-closed-basket">
+                <p> > </p>
+            </div>
+            <p>Корзина</p>
+        </div>
+        <form>
+            <div class="wrapper">
+                <div class="item">
+                    <div class="delete">
+                        <div class="box"></div>
+                    </div>
+                    <img src="img/bg/boy-main.webp" alt="" title="">
+                    <div class="nam-prod">
+                        <p class="name">ЗАУЖЕННЫЕ ЧИНОС</p>
+                        <p class="price">4,000.00</p>
+                        <div class="quantity-of-goods">
+                            <button>
+                                -
+                            </button>
+                            <p class="counter">
+                                0
+                            </p>
+                            <button>
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="delete">
+                        <div class="box"></div>
+                    </div>
+                    <div class="delete"></div>
+                    <img src="img/bg/boy-main.webp" alt="" title="">
+                    <div class="nam-prod">
+                        <p class="name">ЗАУЖЕННЫЕ ЧИНОС</p>
+                        <p class="price">4,000.00</p>
+                        <div class="quantity-of-goods">
+                            <button>
+                                -
+                            </button>
+                            <p class="counter">
+                                1
+                            </p>
+                            <button>
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="delete">
+                        <div class="box"></div>
+                    </div>
+                    <img src="img/bg/boy-main.webp" alt="" title="">
+                    <div class="nam-prod">
+                        <p class="name">ЗАУЖЕННЫЕ ЧИНОС</p>
+                        <p class="price">4,000.00</p>
+                        <div class="quantity-of-goods">
+                            <button>
+                                -
+                            </button>
+                            <p class="counter">
+                                1
+                            </p>
+                            <button>
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="delete">
+                        <div class="box"></div>
+                    </div>
+                    <img src="img/bg/boy-main.webp" alt="" title="">
+                    <div class="nam-prod">
+                        <p class="name">ЗАУЖЕННЫЕ ЧИНОС</p>
+                        <p class="price">4,000.00</p>
+                        <div class="quantity-of-goods">
+                            <button>
+                                -
+                            </button>
+                            <p class="counter">
+                                1
+                            </p>
+                            <button>
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="delete">
+                        <div class="box"></div>
+                    </div>
+                    <img src="img/bg/boy-main.webp" alt="" title="">
+                    <div class="nam-prod">
+                        <p class="name">ЗАУЖЕННЫЕ ЧИНОС</p>
+                        <p class="price">4,000.00</p>
+                        <div class="quantity-of-goods">
+                            <button>
+                                -
+                            </button>
+                            <p class="counter">
+                                1
+                            </p>
+                            <button>
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="delete">
+                        <div class="box"></div>
+                    </div>
+                    <img src="img/bg/boy-main.webp" alt="" title="">
+                    <div class="nam-prod">
+                        <p class="name">ЗАУЖЕННЫЕ ЧИНОС</p>
+                        <p class="price">4,000.00</p>
+                        <div class="quantity-of-goods">
+                            <button>
+                                -
+                            </button>
+                            <p class="counter">
+                                1
+                            </p>
+                            <button>
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="total-amount">
+                <div>
+                    <p class="name">
+                        Сумма
+                    </p>
+                    <p class="price">
+                        9,999.99
+                    </p>
+                </div>     
+                <button class="view-cart-button">
+                    Смотреть корзину
+                </button>          
+            </div>            
+        </form>                        
+    </div>
+    <footer>
+        <div class="wrapper">
+            <div class="item">
+                <h3 class="logo">
+                    ВЕСТА
+                </h3>
+            </div>
+            <div class="item">
+                <h3>
+                    ЗАХОДИТЕ К НАМ
+                </h3>
+                <div>                
+                    <p class="address">
+                        ул. Арбат, 1а, Москва,
+                        119019, Россия
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <h3>
+                    ПРИСОЕДИНЯЙТЕСЬ
+                </h3>
+                <div class="imges">
+                    <a href="#">
+                        <img src="img/icons/icon-vk.webp" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="img/icons/icon-facebook.webp" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="img/icons/icon-twitter.webp" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="img/icons/icon-instagram.webp" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="shadow"></div>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+    <script src="/js/api-request.js" asp-append-version="true"></script>
+</body>
+</html>

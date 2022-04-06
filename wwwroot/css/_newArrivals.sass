@@ -1,0 +1,71 @@
+.new-arrivals
+    padding: 50px 0
+    h2
+        font-weight: 400
+        font-size: 18px
+        line-height: 22px
+        text-align: center
+    .wrapper
+        margin: 30px auto 0
+        max-width: 1200px
+        display: flex
+        justify-content: space-between
+        overflow: auto
+        .card
+            border: none
+            min-width: 313px
+            margin: 0 15px
+            cursor: pointer
+            .classImg
+                display: inline-block
+                overflow: hidden                
+                height: 412px
+                img
+                    height: 100%
+                    display: block
+                    transition: 1s
+                    object-fit: cover
+                    width: 100%
+                    &:hover
+                        transform: scale(1.1)
+            .name-price
+                position: relative
+                height: 100px
+                background: #e0e0e0
+                text-align: center
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: center
+                .name
+                    transition: 0.4s
+                    font-size: 19px                    
+                .price
+                    transition: 0.4s
+                    font-size: 17px
+                    margin-top: 5px
+                .will-appear-smoothly
+                    transition: 0.4s
+                    position: absolute
+                    font-size: 0
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%, -50%)
+        .card
+            &:hover
+                .name-price                    
+                    .name                        
+                        font-size: 0
+                    .price                        
+                        font-size: 0
+                    .will-appear-smoothly
+                        color: rgba(0,0,0,0.5)
+                        font-size: 19px
+
+
+@media  (max-width: 530px)
+    .new-arrivals
+        .wrapper
+            overflow: auto
+            .card
+                min-width: 277px
